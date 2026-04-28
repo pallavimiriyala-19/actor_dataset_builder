@@ -1,8 +1,50 @@
-venv/
+# ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── Dataset & model output (large, generated) ─────────────────────────────────
 raw_data/
 people/
 *.npy
-*.mp4
-*.jpg
+*.onnx
+
+# ── InsightFace model cache ────────────────────────────────────────────────────
+.insightface/
+models/
+buffalo_l/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── icrawler scratch dirs ──────────────────────────────────────────────────────
+*_scratch/
+_bing_scratch/
+_google_scratch/
+
+# ── Credentials / secrets ─────────────────────────────────────────────────────
+.env
+*.env
+secrets.json
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

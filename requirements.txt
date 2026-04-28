@@ -1,12 +1,10 @@
 insightface
-onnxruntime-gpu
+onnxruntime
 opencv-python
 numpy
 Pillow
 imagehash
-imdbpy
+cinemagoer
 icrawler
+ddgs
 requests
-
-
-#pip install insightface onnxruntime-gpu opencv-python numpy Pillow imagehash imdbpy icrawler requests

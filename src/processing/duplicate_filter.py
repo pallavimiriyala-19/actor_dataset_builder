@@ -5,10 +5,12 @@ def remove_duplicates(folder):
     hashes = {}
     for f in os.listdir(folder):
         path = os.path.join(folder, f)
+        if not os.path.isfile(path):
+            continue
         try:
             img = Image.open(path)
             h = imagehash.average_hash(img)
-        except:
+        except Exception:
             continue
 
         if h in hashes:
